@@ -46,10 +46,20 @@
   <main class="mt-2">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-2 mt-1" id="masterList">
-          <!-- STUB - Master List -->
-          <!-- <div class="bg-light text-dark card my-1">${pokemon.name}</div> -->
-          <!--  -->
+        <div class="col-2 mt-1">
+          <div id="masterList">
+            <!-- STUB - Master List -->
+            <!-- <div class="bg-light text-dark card my-1">${pokemon.name}</div> -->
+            <!--  -->
+          </div>
+          <div class="text-center">
+            <button class="btn btn-dark me-2" onclick="app.masterPokemonsController.changeMasterList(-10)">
+              <h3 class="mb-0 pokeText"><i class="mdi mdi-arrow-left-circle-outline"></i></h3>
+            </button>
+            <button class="btn btn-dark ms-2" onclick="app.masterPokemonsController.changeMasterList(10)">
+              <h3 class="mb-0 pokeText"><i class="mdi mdi-arrow-right-circle-outline"></i></h3>
+            </button>
+          </div>
         </div>
 
         <div class="col-8">

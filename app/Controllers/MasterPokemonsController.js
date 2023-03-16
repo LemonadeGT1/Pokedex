@@ -27,6 +27,7 @@ export class MasterPokemonsController {
     this.getAllPokemon()
     appState.on('masterPokemons', _drawMasterPokemonsList)
     appState.on('activePokemon', _drawActivePokemon)
+    appState.on('offset', this.getAllPokemon())
   }
 
   async getAllPokemon() {
@@ -39,7 +40,13 @@ export class MasterPokemonsController {
   }
 
   activatePokemon(pokemon) {
-    console.log('activatePokemon', pokemon)
+    console.log('activatePokemon ', pokemon)
     masterPokemonsService.getOnePokemon(pokemon)
   }
+
+  changeMasterList(num) {
+    console.log('changeMasterList ', num)
+    masterPokemonsService.changeMasterList(num)
+  }
+
 }
