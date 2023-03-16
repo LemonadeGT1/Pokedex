@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="https://bcw.blob.core.windows.net/public/img/9977764104160066">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.1.96/css/materialdesignicons.min.css"
+    integrity="sha512-NaaXI5f4rdmlThv3ZAVS44U9yNWJaUYWzPhvlg5SC7nMRvQYV9suauRK3gVbxh7qjE33ApTPD+hkOW78VSHyeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style/main.css">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <title>Michael's Pokedex</title>
+</head>
+
+<style>
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
+
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+<body class="de bug">
+  <header class="bg-dark border-bottom border-5 border-warning">
+    <h1 class="m-2 text-light">Michael's
+      <span class="text-warning pokeText"> Pokedex </span>
+      <span class="mdi mdi-pokeball pokeText"></span>
+    </h1>
+  </header>
+  <main class="mt-2">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2 mt-1" id="masterList">
+          <!-- STUB - Master List -->
+          <!-- <div class="bg-light text-dark card my-1">${pokemon.name}</div> -->
+          <!--  -->
+        </div>
+
+        <div class="col-8">
+          <div class="row justify-content-center" id="activePokemon">
+            <!-- STUB - Active -->
+            <!-- <div class="col-10 text-center">
+              <h3>${pokemon.name}</h3>
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg"
+                alt="${pokemon.name}">
+            </div>
+            <div class="col-6 text-start">
+              <p>Weight: <span>${pokemon.weight}</span> -- Height: <span>${pokemon.height}</span></p>
+            </div>
+            <div class="col-6 text-end">
+              <p>Base Experience: ${pokemon.base_experience}</p>
+            </div>
+            <div class="col-10 text-center">
+              <button class="btn btn-warning selectable pokeBG border-2">
+                <h1>Catch!</h1>
+              </button>
+            </div> -->
+
+
+            <!--  -->
+          </div>
+        </div>
+
+        <!-- STUB - My List -->
+        <div class="col-2" id="myList">
+          <!-- <p>My personal list goes here</p> -->
+        </div>
+        <!--  -->
+
+      </div>
+    </div>
+  </main>
+  <footer class="bg-dark text-light border-top border-5 border-warning">
+    <div class="text-center no-select pt-2">
+      <p><small>Made with 🪂 by Michael Patience</small></p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"
+    integrity="sha256-hw7v8jZF/rFEdx1ZHepT4D73AFTHLu/P9kEyrNesRyc=" crossorigin="anonymous"></script>
+  <script src="app/App.js" type="module"></script>
+</body>
+
+</html>
